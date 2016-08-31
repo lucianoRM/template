@@ -6,11 +6,9 @@ package ar.fiuba.tdd.tp0;
  */
 public class LinkedList<T> {
 
-    private Node<T> root;
+    private Node<T> root = new EmptyNode<>();
 
-    public LinkedList() {
-        this.root = new EmptyNode<T>();
-    }
+    public LinkedList() { }
 
 
     public boolean isEmpty() {

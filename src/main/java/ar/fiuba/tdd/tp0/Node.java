@@ -6,11 +6,11 @@ package ar.fiuba.tdd.tp0;
 public abstract class Node<T> {
 
     protected T value; //Saves value of node
-    protected Node nextElement; //Reference to next element
+    protected Node<T> nextElement; //Reference to next element
 
 
     //Links node to next one
-    public abstract void link(Node nextNode);
+    public abstract void link(Node<T> nextNode);
 
     //Adds item to node
     public abstract void fill(T item);
@@ -19,7 +19,7 @@ public abstract class Node<T> {
     public abstract T value() ;
 
     //Returns next element
-    public abstract Node next() ;
+    public abstract Node<T> next() ;
 
     //Returns if is last element
     public abstract Boolean isLast();

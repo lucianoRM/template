@@ -8,13 +8,14 @@ public class FilledNode<T> extends Node<T> {
 
 
 
-    public FilledNode(T newValue,Node next) {
+    public FilledNode(T newValue,Node<T> next) {
         this.value = newValue;
         this.nextElement = next;
     }
 
+
     //Links node to next one
-    public void link(Node nextNode) {
+    public void link(Node<T> nextNode) {
         this.nextElement = nextNode;
     }
 
@@ -29,7 +30,7 @@ public class FilledNode<T> extends Node<T> {
     }
 
     //Returns next element
-    public Node next() {
+    public Node<T> next() {
         return this.nextElement;
     }
 

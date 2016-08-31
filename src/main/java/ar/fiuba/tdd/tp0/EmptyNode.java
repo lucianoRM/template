@@ -18,13 +18,13 @@ public class EmptyNode<T> extends Node<T> {
     }
 
     //Returns next element
-    public Node next()   {
+    public Node<T> next()   {
         throw new EmptyNodeError("Can't access empty Node");
     }
 
     //Links node to next one
     public void link(Node nextNode) {
-        this.nextElement = nextNode;
+
     }
 
     //Returns if is last element
