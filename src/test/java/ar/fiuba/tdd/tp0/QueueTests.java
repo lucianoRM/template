@@ -73,4 +73,15 @@ public class QueueTests {
         queue.remove();
         assertEquals(queue.size(),0);
     }
+
+    @Test
+    public void testAddFourAndGetSize() {
+        LinkedQueue<Integer> queue = new LinkedQueue<>();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        queue.add(4);
+        assertEquals(queue.size(),4);
+    }
+
 }
